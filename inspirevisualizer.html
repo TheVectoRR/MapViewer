@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inspire Viewer</title>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="http://openlayers.org/en/v3.11.2/css/ol.css" type="text/css">
+<script src="http://openlayers.org/en/v3.11.2/build/ol.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+</head>
+<body>
+
+	<div class="input_bar col-md-12">
+
+			<div class="form-group col-md-6">
+				<label for="wmsurl">WMS URL:</label> 
+				<input type="text" class="form-control" id="wmsurl" placeholder="Fill in a valid WMS URL...">
+				<button id="wms_submit" class="btn btn-default submit_btn">Load WMS</button>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="polygon">Polygon:</label> 
+				<input type="text" class="form-control" id="polygon">
+				<button id="poly_submit" class="btn btn-default submit_btn">Load Polygon</button>
+			</div>
+			
+			
+
+	</div>
+
+			<div class="col-md-12">
+				<div id="map" class="map"></div>
+			</div>
+
+	<script src="js/mapconf.js"></script>
+
+</body>
+</html>
